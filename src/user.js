@@ -16,7 +16,7 @@ boton.addEventListener('click', ()=>{
         console.log(errorCode);
         console.log(errorMessage);
       })
-      
+      //def
 }) 
 //Ingreso Usuario ya creado
 const boton2 = document.getElementById('boton2');
