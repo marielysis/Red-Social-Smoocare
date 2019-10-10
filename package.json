@@ -1,11 +1,34 @@
 {
-    "name": "testjest",
-    "version": "1.0.0",
-    "description": "test",
-    "main": "index.js",
-    "scripts": {
-        "test": "jest --coverage"
-    },
-    "author": "marielys",
-    "license": "ISC"
+  "name": "socialnetword",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "marielys",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marielysis/Red-Social-Smoocare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marielysis/Red-Social-Smoocare/issues"
+  },
+  "homepage": "https://github.com/marielysis/Red-Social-Smoocare#readme",
+  "dependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "babel-core": "^6.26.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-jest": "^22.17.0",
+    "express": "^4.17.1",
+    "gh-pages": "^2.1.1",
+    "htmlhint": "^0.11.0",
+    "jest": "^24.9.0",
+    "jshint": "^2.10.2"
+  }
 }
