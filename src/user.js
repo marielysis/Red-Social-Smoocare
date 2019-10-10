@@ -65,7 +65,7 @@ function aparece(user){
     if(usuario.emailVerified){
         contenido.innerHTML=`
         <p>Bienvenido!</p>
-        <button onclick="cerrar()">Cerrar Seccion</button>`;
+        <button onclick="cerrar()">Cerrar Seccion2</button>`;
     }
     
 }
