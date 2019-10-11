@@ -13,7 +13,7 @@ export const mainViews = () => {
     contHeader.setAttribute("id", "contHeader");
     contInit.appendChild(contHeader);
     contHeader.innerHTML += `<div>
-                             <a title="Home" href="../src/index.html"><img class="redSocialWelcome" src="logo" alt="HomeRedSocial">logo</a>
+    <a title="Home" href="http://localhost:3000/"><img class="redSocialWelcome" src="https://i.ibb.co/zP4HX3M/logo14.png" alt="HomeRedSocial"></a>
                              </div>`
 
     //creamos container body
@@ -21,16 +21,26 @@ export const mainViews = () => {
     contBody.className = "contBody";
     contHeader.setAttribute("id", "contBody");
     contInit.appendChild(contBody);
-    contBody.innerHTML += `<h4>Ingreso de Usuario</h4>
+    contBody.innerHTML += `<h4>Registro de Usuarios</h4>
+                            <input id="email" type="correo" placeholder="Ingresa email">
+                            <input id="password" type="pasword" placeholder="ingresa contraseña">
+                            <button id="boton">Enviar</button>                            
+                    
+                            <h4>Ingreso de Usuario</h4>
                             <input id="email2" type="correo" placeholder="Ingresa email">
                             <input id="password2" type="pasword" placeholder="ingresa contraseña">
-                            <button id="boton2">Acceder</button>`
+                            <button id="boton2">Acceder</button>
+                            
+                            <h4>Accede con:</h4>
+                            <button id="sigin">Google</button>
+                            <div id="contenido">  `
 
     //creamos container footer
     const contFooter = document.createElement("div");
     contFooter.className = "contFooter";
     contFooter.setAttribute("id", "contFooter");
     contInit.appendChild(contFooter);
+    contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
 
 
 
