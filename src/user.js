@@ -104,7 +104,7 @@ buttonGoogle.addEventListener('click', () => {
     authentication(base_porvider)
 
 })
-  
+  //
 //Autenticando con Firebase a través del objeto del proveedor de Google
 function authentication(base_porvider){
     firebase.auth().signInWithPopup(base_porvider).then(function(result) {
