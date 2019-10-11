@@ -16,7 +16,7 @@ boton.addEventListener('click', ()=>{
         console.log(errorCode);
         console.log(errorMessage);
       })
-      //def
+      
 }) 
 //Ingreso Usuario ya creado
 const boton2 = document.getElementById('boton2');
@@ -93,6 +93,15 @@ function verificar(){
     // An error happened.
     console.log(error)
     });
+}
+
+googleSigin=()=> {
+    base_porvider= new firebase.auth.GoogleAuthProvider()
+    firebase.auth().sigInWithPopup(base_porvider).then(function(result){
+        console.log("Success Google")
+    }).catch(function(error){
+        console.log(error)
+    })
 }
 
 observador()
