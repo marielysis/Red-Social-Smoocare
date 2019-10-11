@@ -6,11 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Smoocare</title>
-    <link rel="stylesheet" href="style.css" />
+    >
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA0mjnDO_QFPxd4n-tfPZJlcFdDD4mpVVA",
+            authDomain: "redsocial-4874d.firebaseapp.com",
+            databaseURL: "https://redsocial-4874d.firebaseio.com",
+            projectId: "redsocial-4874d",
+            storageBucket: "",
+            messagingSenderId: "576134938057",
+            appId: "1:576134938057:web:7164e3fa1e496e9d85bc18",
+            measurementId: "G-NSNH3LLWF1"
+        };
+        // Initialize Firebase
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </head>
 
 <body>
-
     <div class="containerPrincipal">
         <header class="header">
             <div>
@@ -21,14 +45,15 @@
         <main class="main">
             <!--root-->
             <div id="root">
-                <input type="text" class="inicio">
-                <h3>Usuario</h3>
-                <input type="text" class="inicio">
-                <h3>Contraseña</h3>
-                <a href="#">Crea tu cuenta</a>
-                <button type="submit" class="inicio">Enviar</button>
-                <button class="inicio">Incia Sesión con Google</button>
-                <button class="inicio">Incia Sesión con Facebook</button>
+                <h4>Registro de Usuarios</h4>
+                <input id="email" type="correo" placeholder="Ingresa email">
+                <input id="password" type="pasword" placeholder="ingresa contraseña">
+                <button id="boton">Enviar</button>
+
+                <h4>Ingreso de Usuario</h4>
+                <input id="email2" type="correo" placeholder="Ingresa email">
+                <input id="password2" type="pasword" placeholder="ingresa contraseña">
+                <button id="boton2">Acceder</button>
 
             </div>
 
@@ -39,8 +64,8 @@
         </footer>
 
     </div>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+
+    <script src="user.js"></script>
 </body>
 
 </html>
