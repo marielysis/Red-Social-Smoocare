@@ -31,6 +31,7 @@
 
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
+        firebase.auth()
     </script>
 </head>
 
@@ -54,6 +55,10 @@
                 <input id="email2" type="correo" placeholder="Ingresa email">
                 <input id="password2" type="pasword" placeholder="ingresa contraseña">
                 <button id="boton2">Acceder</button>
+
+                <h4>Accede con:</h4>
+                <button id="sigin">Google</button>
+                <div id="contenido">    
 
             </div>
 
