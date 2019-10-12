@@ -1,4 +1,4 @@
-export const mainViews = () => {
+export const newRegt = () => {
     //creamos vista o pagina principal
     const contPrincipal = document.getElementById("root");
     //creamos container principal
@@ -21,15 +21,10 @@ export const mainViews = () => {
     contBody.className = "contBody";
     contHeader.setAttribute("id", "contBody");
     contInit.appendChild(contBody);
-    contBody.innerHTML += ` <h4>Ingreso de Usuario</h4>
-                            <input id="email2" type="correo" placeholder="Ingresa email">
-                            <input id="password2" type="pasword" placeholder="ingresa contraseña">
-                            <button id="boton2">Acceder</button>
-                            <a href="../src/newreg.js">Crea una cuenta</a>
-                            
-                            <h4>Accede con:</h4>
-                            <button id="sigin">Google</button>
-                            <div id="contenido">  `
+    contBody.innerHTML += `<h4>Registro de Usuarios</h4>
+                            <input id="email" type="correo" placeholder="Ingresa email">
+                            <input id="password" type="pasword" placeholder="ingresa contraseña">
+                            <button id="boton">Enviar</button> `
 
     //creamos container footer
     const contFooter = document.createElement("div");
