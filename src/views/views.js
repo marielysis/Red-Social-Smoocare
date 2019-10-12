@@ -29,7 +29,7 @@ export const mainViews = () => {
                             
                             <h4>Accede con:</h4>
                             <button id="sigin">Google</button>
-                            <div id="contenido">  `
+                            <button id ="authFB"> Facebook</button>`
 
     //creamos container footer
     const contFooter = document.createElement("div");
