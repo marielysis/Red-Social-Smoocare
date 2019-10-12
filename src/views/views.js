@@ -16,7 +16,7 @@ const mainViews = () => {
     const contFooter = document.createElement("div");
     contFooter.className = "contFooter";
     contFooter.setAttribute("id", "contFooter");
-
+ 
 
 
 }
