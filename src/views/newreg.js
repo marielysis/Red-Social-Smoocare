@@ -1,7 +1,4 @@
-import { newRegt } from './newreg.js';
-//import { buttonGoogle } from '/user.js';
-
-export const mainViews = () => {
+export const newRegt = () => {
     //creamos vista o pagina principal
     const contPrincipal = document.getElementById("root");
     //creamos container principal
@@ -24,14 +21,11 @@ export const mainViews = () => {
     contBody.className = "contBody";
     contHeader.setAttribute("id", "contBody");
     contInit.appendChild(contBody);
-    contBody.innerHTML += ` <h2>Inicio de Sesión</h2>
-                            <input id="email2" type="correo" placeholder="Ingresa email"></br>
-                            <input id="password2" type="pasword" placeholder="ingresa contraseña"></br>
-                            <button id="boton2">Acceder</button>                     
-                            <a id="newUser" href="#">Crea una Cuenta</a>
-                            <h4>Accede con:</h4>
-                            <button id="sigin">Google</button></br>
-                            <button id ="authFB"> Facebook</button>`
+    contBody.innerHTML += `<h4>Registro de Usuarios</h4>
+                            <label>Nombre Completo:</label><input id="name" type= "text"></br>
+                            <label>Email:</label><input id="email" type="correo"></br>
+                            <label>Ingresa una Contraseña:</label><input id="password" type="pasword"></br>
+                            <button id="boton">Enviar</button> `
 
     //creamos container footer
     const contFooter = document.createElement("div");
@@ -40,16 +34,4 @@ export const mainViews = () => {
     contInit.appendChild(contFooter);
     contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
 
-    newUser = document.getElementById("newUser");
-    newUser.addEventListener('click', () => {
-        contInit.innerHTML = " "
-        newRegt()
-    })
-
-    /*
-        const userGoogle = document.getElementById("sigin")
-        userGoogle.addEventListener('click', () => {
-            buttonGoogle()
-        })
-    */
 }
