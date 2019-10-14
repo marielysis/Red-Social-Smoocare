@@ -13,7 +13,7 @@ export const newRegt = () => {
     contHeader.setAttribute("id", "contHeader");
     contInit.appendChild(contHeader);
     contHeader.innerHTML += `<div>
-    <a title="Home" href="http://localhost:3000/"><img class="redSocialWelcome" src="https://i.ibb.co/zP4HX3M/logo14.png" alt="HomeRedSocial"></a>
+    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="https://i.ibb.co/zP4HX3M/logo14.png" alt="HomeRedSocial"></a>
                              </div>`
 
     //creamos container body
@@ -22,8 +22,9 @@ export const newRegt = () => {
     contHeader.setAttribute("id", "contBody");
     contInit.appendChild(contBody);
     contBody.innerHTML += `<h4>Registro de Usuarios</h4>
-                            <input id="email" type="correo" placeholder="Ingresa email">
-                            <input id="password" type="pasword" placeholder="ingresa contraseña">
+                            <label>Nombre Completo:</label><input id="name" type= "text"></br>
+                            <label>Email:</label><input id="email" type="correo"></br>
+                            <label>Ingresa una Contraseña:</label><input id="password" type="pasword"></br>
                             <button id="boton">Enviar</button> `
 
     //creamos container footer
