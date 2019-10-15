@@ -1,8 +1,6 @@
 //Crear usuario nuevo
 /*
 export const createUser = (email,password) =>{
-
-
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function() {
             verificar()
@@ -10,21 +8,15 @@ export const createUser = (email,password) =>{
         .catch(function(error) {
             var errorCode = error.code;
             var errorMessage = error.message;
-
             console.log(errorCode);
             console.log(errorMessage);
         })
-
 })
-
-
-
 //Ingreso Usuario ya creado
 const boton2 = document.getElementById('boton2');
 boton2.addEventListener('click', () => {
     const email2 = document.getElementById('email2').value
     const password2 = document.getElementById('password2').value;
-
     firebase.auth().signInWithEmailAndPassword(email2, password2)
         .catch(function(error) {
             // Handle Errors here.
@@ -32,7 +24,6 @@ boton2.addEventListener('click', () => {
             var errorMessage = error.message;
             console.log(errorCode);
             console.log(errorMessage);
-
             // ...
         });
 });
@@ -50,7 +41,6 @@ function observador() {
             var uid = user.uid;
             var providerData = user.providerData;
             console.log(" existe usuario activo")
-
             // ...
         } else {
             // User is signed out.
@@ -59,7 +49,6 @@ function observador() {
         }
     });
 }
-
 function aparece(user) {
     const usuario = user;
     const contenido = document.getElementById("contenido");
@@ -68,7 +57,6 @@ function aparece(user) {
         <p>Bienvenido!</p>
         <button onclick="cerrar()">Cerrar Seccion2</button>`;
     }
-
 }
 //cerrar sesion
 function cerrar() {
@@ -78,13 +66,11 @@ function cerrar() {
         })
         .catch(function(error) {
             console.log(error);
-
         });
 }
 // Verificación por 
 function verificar() {
     var user = firebase.auth().currentUser;
-
     user.sendEmailVerification()
         .then(function() {
             // Email sent.
@@ -138,39 +124,6 @@ export const userFacebook = () => {
 const authFacebook = () => {
     const provider = new firebase.auth.FacebookAuthProvider();
     authCuentaFacebook(provider);
-}
-
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-//authenticando con facebook
-  
-
-function authCuentaFacebook (provider) {
-     
-    firebase.auth().signInWithPopup(provider).then(function(result) {
-        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-        var token = result.credential.accessToken;
-        // The signed-in user info.
-        var user = result.user;
-        console.log(user);
-        // ...
-     })
-     .catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        console.log(errorCode)
-        var errorMessage = error.message;
-        console.log(errorMessage)
-        // The email of the user's account used.
-        var email = error.email;
-        console.log(email)
-        // The firebase.auth.AuthCredential type that was used.
-        var credential = error.credential;
-        console.log(credential)
-        // ...
-     })
-    
 }
 
 //authenticando con facebook
