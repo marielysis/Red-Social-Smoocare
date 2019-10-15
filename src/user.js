@@ -146,9 +146,7 @@ const authFacebook = () => {
     authCuentaFacebook(provider);
 }
 
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
+
 //authenticando con facebook
   
 
