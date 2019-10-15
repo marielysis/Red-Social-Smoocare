@@ -1,9 +1,7 @@
 //Crear usuario nuevo
+/*
+export const createUser = (email,password) =>{
 
-const boton = document.getElementById('boton');
-boton.addEventListener('click', () => {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
 
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then(function() {
@@ -96,16 +94,13 @@ function verificar() {
             // An error happened.
             console.log(error)
         });
-}
+}*/
 
-export const buttonGoogle = document.getElementById('sigin');
-buttonGoogle.addEventListener('click', () => {
-        console.log("click")
-        base_porvider = new firebase.auth.GoogleAuthProvider();
-        authentication(base_porvider)
+export const userGoogle = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        authentication(provider)
 
-    })
-    //
+    }
     //Autenticando con Firebase a través del objeto del proveedor de Google
 function authentication(base_porvider) {
     firebase.auth().signInWithPopup(base_porvider).then(function(result) {
@@ -135,11 +130,10 @@ function authentication(base_porvider) {
 
 }
 
-const buttonFace = document.getElementById('authFB');
-buttonFace.addEventListener('click', () => {
+export const userFacebook = () => {
     authFacebook();
     authCuentaFacebook();
-})
+}
 
 const authFacebook = () => {
     const provider = new firebase.auth.FacebookAuthProvider();
@@ -175,9 +169,4 @@ function authCuentaFacebook(provider) {
                 // ...
         })
 
-
 }
-
-
-
-observador()

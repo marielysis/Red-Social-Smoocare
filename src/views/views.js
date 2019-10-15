@@ -1,5 +1,5 @@
 import { newRegt } from './newreg.js';
-//import { buttonGoogle } from '/user.js';
+import { userGoogle, userFacebook } from '/user.js';
 
 export const mainViews = () => {
     //creamos vista o pagina principal
@@ -30,8 +30,9 @@ export const mainViews = () => {
                             <button id="boton2">Acceder</button>                     
                             <a id="newUser" href="#">Crea una Cuenta</a>
                             <h4>Accede con:</h4>
-                            <button id="sigin">Google</button></br>
-                            <button id ="authFB"> Facebook</button>`
+                            <button id="google">Google</button></br>
+                            <button id ="facebook"> Facebook</button>`
+
 
     //creamos container footer
     const contFooter = document.createElement("div");
@@ -45,6 +46,20 @@ export const mainViews = () => {
         contInit.innerHTML = " "
         newRegt()
     })
+
+    const userGoog = document.getElementById("google");
+    userGoog.addEventListener("click", () => {
+
+        userGoogle();
+
+    })
+    const userFace = document.getElementById("facebook");
+    userFace.addEventListener("click", () => {
+
+        userFacebook();
+
+    })
+
 
     /*
         const userGoogle = document.getElementById("sigin")
