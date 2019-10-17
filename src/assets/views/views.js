@@ -2,7 +2,7 @@ import { newRegt } from './newreg.js';
 import { userGoogle, userFacebook } from '/assets/js/auth.js';
 
 export const mainViews = () => {
-    //creamos vista o pagina principal
+    //creamos vista o pagina principal/
     const contPrincipal = document.getElementById("root");
     //creamos container principal
     const contInit = document.createElement("div");
