@@ -16,7 +16,7 @@ export const mainViews = () => {
     contHeader.setAttribute("id", "contHeader");
     contInit.appendChild(contHeader);
     contHeader.innerHTML += `<div class= "logo">
-    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="assets/imagen/logo14.png" alt="HomeRedSocial"></a>
+                            <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="https://i.ibb.co/zP4HX3M/logo14.png" alt="HomeRedSocial"></a>
                              </div>`
 
     //creamos container body
@@ -31,11 +31,18 @@ export const mainViews = () => {
                             <a id="newUser" href="#">Crea una Cuenta</a>
                             <h4>Accede con:</h4>
 
+
                             <div class="buttonlogin">
                             
                             <button id="google" class="buttonGoogle"><img src="assets/imagen/google.png" class="logoG"></button>
                             <button id ="facebook" class="buttonFB"><img src="assets/imagen/facebook.png" class="logoF"></button>
                             </div>`
+
+                            <button id="google" class="buttonGoogle">Google</button></br>
+                            <button id ="facebook" class="butonFB"> Facebook</button>`
+
+
+
 
     //creamos container footer
     const contFooter = document.createElement("div");
