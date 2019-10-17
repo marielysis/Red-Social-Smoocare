@@ -1,3 +1,8 @@
+body{
+    background-color: #e4e8a7;
+   
+}
+
 .root, .contInit{
     width:100%;
     height: 100vh;
@@ -5,6 +10,7 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     font-family: sans-serif;
+   
     
 }
 
@@ -16,9 +22,11 @@
 }
 
 .redSocialWelcome{
-    width: 100%;
-    justify-content:center;
+    width: 280px;
+    justify-content: center;
     align-items: center;
+    margin: 4%;
+
 }
 
 .contBody{
@@ -33,6 +41,7 @@
     width: 100%;
     align-items: flex-end !important;
 }
+
 input{
 	border: 1px solid #062C43;
 	display: inline-block;
@@ -61,9 +70,19 @@ input{
     border:0;
     background-color: #09a4dd;
     border-radius: 8%;
+    margin: 4%;
 
 }
 
-.buttonFb{
-    background-image:url("imagen/logofb.png");
+.buttonlogin{
+    flex-direction: column-reverse;
+    width: 50%;
+}
+.logoF, .logoG{
+    width: 50px;
+    height: 50px;
+}
+.newAccount{
+    font-family: sans-serif;
+    color: #062c43;
 }
