@@ -38,8 +38,6 @@ export const mainViews = () => {
                             <button id ="facebook" class="buttonFB"><img src="assets/imagen/facebook.png" class="logoF"></button>
                             </div>`
 
-                            <button id="google" class="buttonGoogle">Google</button></br>
-                            <button id ="facebook" class="butonFB"> Facebook</button>`
 
 
 
