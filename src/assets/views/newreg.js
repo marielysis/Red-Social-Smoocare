@@ -14,9 +14,9 @@ export const newRegt = () => {
     contHeader.className = "contHeader";
     contHeader.setAttribute("id", "contHeader");
     contInit.appendChild(contHeader);
-    contHeader.innerHTML += `<div>
-    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="https://i.ibb.co/zP4HX3M/logo14.png" alt="HomeRedSocial"></a>
-    </div>`
+    contHeader.innerHTML += `<div class= "logo">
+    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="assets/imagen/logo14.png" alt="HomeRedSocial"></a>
+                             </div>`
 
     //creamos container body
     const contBody = document.createElement("div");
@@ -24,10 +24,12 @@ export const newRegt = () => {
     contHeader.setAttribute("id", "contBody");
     contInit.appendChild(contBody);
     contBody.innerHTML += `<h4>Registro de Usuarios</h4>
+                            <div class= "formNewUser">
                             <label>Nombre Completo:</label><input id="name" type= "text"></br>
-                            <label>Email:</label><input id="email" type="correo"></br>
-                            <label>Ingresa una Contraseña:</label><input id="password" type="pasword"></br>
-                            <button id="enviar">Enviar</button> `
+                            <label>Email:</label><br><input id="email" type="correo"></br>
+                            <label>Ingresa una Contraseña:</label><br><input id="password" type="pasword"></br>
+                            </div>
+                            <button id="enviar" class="btnSigin">Enviar</button> `
 
     //creamos container footer
     const contFooter = document.createElement("div");
@@ -36,14 +38,13 @@ export const newRegt = () => {
     contInit.appendChild(contFooter);
     contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
 
-    const btnEnviar = document.getElementById("enviar")
-    btnEnviar.addEventListener("click", () => {
+    const login = () => {
         const name = document.getElementById("name")
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         createUser(email, password, name);
 
-    })
+    }
 
 
 }
