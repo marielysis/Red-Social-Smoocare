@@ -16,7 +16,7 @@ export const mainViews = () => {
     contHeader.setAttribute("id", "contHeader");
     contInit.appendChild(contHeader);
     contHeader.innerHTML += `<div class= "logo">
-    <a title="Home" href="http://localhost:4500/"><img class="assets/imagen/logo14.png" alt="HomeRedSocial"></a>
+    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="assets/imagen/logo14.png" alt="HomeRedSocial"></a>
                              </div>`
 
     //creamos container body
