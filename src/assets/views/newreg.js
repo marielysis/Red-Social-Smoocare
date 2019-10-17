@@ -36,14 +36,13 @@ export const newRegt = () => {
     contInit.appendChild(contFooter);
     contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
 
-    const btnEnviar = document.getElementById("enviar")
-    btnEnviar.addEventListener("click", () => {
+    const login = () => {
         const name = document.getElementById("name")
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         createUser(email, password, name);
 
-    })
+    }
 
 
 }
