@@ -31,8 +31,16 @@ export const mainViews = () => {
                             <a id="newUser" href="#">Crea una Cuenta</a>
                             <h4>Accede con:</h4>
 
+
+                            <div class="buttonlogin">
+                            //
+                            <button id="google" class="buttonGoogle"><img src="assets/imagen/google.png" class="logoG"></button>
+                            <button id ="facebook" class="buttonFB"><img src="assets/imagen/facebook.png" class="logoF"></button>
+                            </div>`
+
                             <button id="google" class="buttonGoogle">Google</button></br>
                             <button id ="facebook" class="butonFB"> Facebook</button>`
+
 
 
 
