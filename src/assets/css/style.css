@@ -1,0 +1,88 @@
+body{
+    background-color: #e4e8a7;
+   
+}
+
+.root, .contInit{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    font-family: sans-serif;
+   
+    
+}
+
+
+.logo{
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+
+.redSocialWelcome{
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+
+}
+
+.contBody{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px 0 20px;
+}
+
+.contFooter{
+    justify-content: flex-end !important;
+    width: 100%;
+    align-items: flex-end !important;
+}
+
+input{
+	border: 1px solid #062C43;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+    font-family:  sans-serif;
+    font-size: 15px;
+    margin: 2%;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+    width: 80%;
+	
+}
+.init{
+    font-size: 18px;
+    width: 80%;
+    margin:0;
+    padding: 4px;
+
+}
+
+.btnSigin{
+    padding: 5px 8px;
+    font-size:14px;
+    border:0;
+    background-color: #09a4dd;
+    border-radius: 8%;
+    margin: 4%;
+
+}
+
+.buttonlogin{
+    flex-direction: column-reverse;
+    width: 50%;
+}
+.logoF, .logoG{
+    width: 50px;
+    height: 50px;
+}
+.newAccount{
+    font-family: sans-serif;
+    color: #062c43;
+}
