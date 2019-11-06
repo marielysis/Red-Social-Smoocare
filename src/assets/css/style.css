@@ -1,8 +1,4 @@
-body{
-    background-color: #e4e8a7;
-   
-}
-
+/* Divs 
 .root, .contInit{
     width:100%;
     display: flex;
@@ -10,29 +6,13 @@ body{
     justify-content: flex-start;
     font-family: sans-serif;
    
-    
-}
-
-
-.logo{
-    width: 100%;
-    justify-content:center;
-    align-items: center;
-}
-
-.redSocialWelcome{
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    margin: 4%;
-
 }
 
 .contBody{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 20px 0 20px;
+    margin: 0 5% 0 5%;
 }
 
 .contFooter{
@@ -41,54 +21,290 @@ body{
     align-items: flex-end !important;
 }
 
-input{
-	border: 1px solid #062C43;
-	display: inline-block;
-    font-family:  sans-serif;
+.logo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formNewUser{
+    width: 100%;
+    height: 50%;
+}
+
+.newAccount{
+    font-family: sans-serif;
+    color: #062c43;
+    width: 40%;
+    font-size:small;
+    display: inline;
+
+}
+
+/* Estilo a todos los elementos 
+label{
+    font-family: sans-serif;
+    font-size: 90%;
+}
+
+input {
+    border: 1px solid #062C43;
+    display: inline-block;
+    font-family: sans-serif;
     font-size: 15px;
     margin: 2%;
     border-top-color: #FFFFFF;
     border-left-color: #FFFFFF;
     border-right-color: #FFFFFF;
     width: 80%;
-	
-}
-.init{
-    font-size: 18px;
-    width: 80%;
-    margin:0;
-    padding: 4px;
-
 }
 
+/* Imagenes 
+.redSocialWelcome{
+    width: 90%;
+    margin: 0 2% 0 6%;
+}
+
+/* botones 
 .btnSigin{
-    padding: 5px 8px;
-    font-size:14px;
-    border:0;
-    background-color: #09a4dd;
-    border-radius: 8%;
-    margin: 4%;
+    width: 30%;
+    height: 26px;
+    left: 34px;
+    top: 379px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FEF8F8;
+    background: #09A4DD;
+    border: 1px solid #FFFBFB;
+    box-sizing: border-box;
+    border-radius: 10px;
 
 }
 
-.buttonlogin{
+.buttonlogin {
     flex-direction: column-reverse;
     width: 50%;
 }
-.logoF, .logoG{
+
+.logoF,
+.logoG {
     width: 50px;
     height: 50px;
 }
-.newAccount{
-    font-family: sans-serif;
-    color: #062c43;
-}
- label{
-     font-family: sans-serif;
-     font-size: 90%;
- }
 
- .formNewUser{
-     width: 80%;
-     height: 50%;
- }
+
+
+
+/* h2 
+ .init{
+    
+    width: 100%;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    color: #000000;
+    margin: 5% 10% 5% 20%;
+
+} 
+*/
+
+
+/* grillas */
+
+.contInit {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.contHeader {
+    display: grid;
+    text-align: center;
+    height: 120px;
+}
+
+.link {
+    height: 100px;
+    width: 300px;
+}
+
+.redSocialWelcome {
+    width: 55%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contBody {
+    display: grid;
+    height: 380px;
+    padding: 1px;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+}
+
+.init1 {
+    text-align: center;
+    grid-column: 1/3;
+    height: 50px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 5%;
+}
+
+.init {
+    font-size: 120%;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.init2 {
+    grid-column: 1/3;
+    text-align: center;
+    margin-top: 5%;
+}
+
+input {
+    border: 1px solid #062C43;
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: start;
+    font-size: 90%;
+    margin: 3%;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+    width: 80%;
+}
+
+.initbutton {
+    text-align: end;
+}
+
+.btnSigin {
+    width: 80%;
+    height: 26px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FEF8F8;
+    background: #09A4DD;
+    border: 1px solid #FFFBFB;
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+.initnew {
+    display: flex;
+    margin-block-end: 10%;
+    flex-flow: column nowrap;
+}
+
+.linkNewAccount {
+    font-family: sans-serif;
+    font-size: 70%;
+    margin-left: 5%;
+}
+
+.question {
+    font-family: sans-serif;
+    font-size: 70%;
+    margin: 15% 0 2% 5%;
+}
+
+.initLogin {
+    grid-column: 1/3;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 80%;
+}
+
+.buttonFB {
+    width: 40%;
+    height: 26px;
+    background: #3F89F8;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFCFC;
+    border: 1px solid #FFFBFB;
+}
+
+.buttonGoogle {
+    width: 40%;
+    height: 26px;
+    background: #FB3737;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFCFC;
+    border: 1px solid #FFFBFB;
+}
+
+.contBody2 {
+    display: grid;
+    height: 380px;
+    padding: 1px;
+    grid-gap: 1px;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.initP1 {
+    text-align: center;
+    grid-column: 1/3;
+    height: 50px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 10%;
+}
+
+.initP2 {
+    grid-column: 1/3;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 90%;
+}
+
+.initnewP {
+    grid-column: 1/3;
+    display: flex;
+    margin-left: 15%;
+    align-self: flex-start;
+}
+
+.btnSiginP {
+    width: 80%;
+    height: 26px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FEF8F8;
+    background: #09A4DD;
+    border: 1px solid #FFFBFB;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.contFooter {
+    height: 64px;
+}
