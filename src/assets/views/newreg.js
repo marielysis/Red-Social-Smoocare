@@ -15,28 +15,30 @@ export const newRegt = () => {
     contHeader.setAttribute("id", "contHeader");
     contInit.appendChild(contHeader);
     contHeader.innerHTML += `<div class= "logo">
-    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="assets/imagen/logo14.png" alt="HomeRedSocial"></a>
+    <a title="Home" href="http://localhost:4500/"><img class="redSocialWelcome" src="assets/imagen/logo.png" alt="HomeRedSocial"></a>
                              </div>`
 
     //creamos container body
     const contBody = document.createElement("div");
-    contBody.className = "contBody";
+    contBody.className = "contBody2";
     contHeader.setAttribute("id", "contBody");
     contInit.appendChild(contBody);
-    contBody.innerHTML += `<h4>Registro de Usuarios</h4>
-                            <div class= "formNewUser">
-                            <label>Nombre Completo:</label><input id="name" type= "text"></br>
-                            <label>Email:</label><br><input id="email" type="correo"></br>
-                            <label>Ingresa una Contraseña:</label><br><input id="password" type="pasword"></br>
+    contBody.innerHTML += `<div class="initP1"><h2 class="init">Registro de Usuarios</h2> </div>
+                            <div class="initP2">
+                            <input id="name" type= "text" placeholder="Nombre Completo"></br>
+                            <input id="email" type="correo" placeholder="Email"></br>
+                            <input id="password" type="password" placeholder="Ingresa una Contraseña"></br>
                             </div>
-                            <button id="enviar" class="btnSigin">Enviar</button> `
+                            <div class="initnewP">
+                            <button id="enviar" class="btnSiginP">Enviar</button> 
+                            </div>`
 
     //creamos container footer
     const contFooter = document.createElement("div");
     contFooter.className = "contFooter";
     contFooter.setAttribute("id", "contFooter");
     contInit.appendChild(contFooter);
-    contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
+    contFooter.innerHTML += ` <h6>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h6>`
 
     const login = () => {
         const name = document.getElementById("name")
