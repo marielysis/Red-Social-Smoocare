@@ -1,94 +1,97 @@
-body{
-    background-color: #e4e8a7;
-   
+body {
+    background-image: linear-gradient(#062c43, #09a4dd, #3ff7ff, #e4e87a, #827e58);
 }
 
-.root, .contInit{
-    width:100%;
+.root,
+.contInit {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     font-family: sans-serif;
-   
-    
 }
 
-
-.logo{
+.logo {
     width: 100%;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.redSocialWelcome{
+.redSocialWelcome {
     width: 90%;
     justify-content: center;
     align-items: center;
     margin: 4%;
-
 }
 
-.contBody{
+.contBody {
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0 20px 0 20px;
 }
 
-.contFooter{
+.contFooter {
     justify-content: flex-end !important;
     width: 80%;
     align-items: flex-end !important;
 }
 
-input{
-	border: 1px solid #062C43;
-	display: inline-block;
-    font-family:  sans-serif;
+input {
+    border: 1px solid #062C43;
+    display: inline-block;
+    font-family: sans-serif;
     font-size: 15px;
     margin: 2%;
     border-top-color: #FFFFFF;
     border-left-color: #FFFFFF;
     border-right-color: #FFFFFF;
     width: 80%;
-	
 }
-.init{
+
+.init {
     font-size: 18px;
     width: 80%;
-    margin:0;
+    margin: 0;
     padding: 4px;
-
 }
 
-.btnSigin{
+.btnSigin {
     padding: 5px 8px;
-    font-size:14px;
-    border:0;
+    font-size: 14px;
+    border: 0;
     background-color: #09a4dd;
     border-radius: 8%;
     margin: 4%;
-
 }
 
-.buttonlogin{
+.buttonlogin {
     flex-direction: column-reverse;
     width: 50%;
 }
-.logoF, .logoG{
+
+.logoF,
+.logoG {
     width: 50px;
     height: 50px;
 }
-.newAccount{
+
+.newAccount {
     font-family: sans-serif;
     color: #062c43;
 }
- label{
-     font-family: sans-serif;
-     font-size: 90%;
- }
 
- .formNewUser{
-     width: 80%;
-     height: 50%;
- }
+label {
+    font-family: sans-serif;
+    font-size: 90%;
+}
+
+.formNewUser {
+    width: 80%;
+    height: 50%;
+}
+
+.contFooter {
+    padding: 8px 1px;
+    color: #f2f2f2;
+}
