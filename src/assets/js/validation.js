@@ -1,8 +1,11 @@
+import { wall } from "../views/wall.js";
+import{mainViews} from "../views/views.js";
 //Autentificacion de usuario
-function observador() {
+export const observador = () => {
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-            // User is signed in.
+            var uid = user.uid;
+          /*   // User is signed in.
             aparece(user);
             var displayName = user.displayName;
             var email = user.email;
@@ -11,13 +14,17 @@ function observador() {
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
-            console.log(" existe usuario activo")
+          
 
-            // ...
+            // ... */
+            console.log('ingreso');
+            wall();
+           
         } else {
             // User is signed out.
             // ...
             console.log("no existe usuario activo")
+            mainViews();
         }
     });
 }
@@ -51,6 +58,8 @@ function verificar() {
         .then(function() {
             // Email sent.
             console.log("enviando correo")
+            contInit.innerHTML = " ";
+            wall();
         })
         .catch(function(error) {
             // An error happened.

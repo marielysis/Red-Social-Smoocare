@@ -1,10 +1,11 @@
 import { newRegt } from './newreg.js';
-import { userGoogle, userFacebook } from '/assets/js/auth.js';
+import { userGoogle, userFacebook, login } from '/assets/js/auth.js';
 
 export const mainViews = () => {
     //creamos vista o pagina principal/
     const contPrincipal = document.getElementById("root");
     //creamos container principal
+    
     const contInit = document.createElement("div");
     contInit.className = "contInit";
     contInit.setAttribute("id", "contInit");
@@ -60,6 +61,13 @@ export const mainViews = () => {
         newRegt()
     })
 
+
+    const acceder=document.getElementById("boton2");
+    acceder.addEventListener("click",()=>{
+        login();
+    })
+
+
     const userGoog = document.getElementById("google");
     userGoog.addEventListener("click", () => {
 
@@ -73,11 +81,4 @@ export const mainViews = () => {
 
     })
 
-
-    /*
-        const userGoogle = document.getElementById("sigin")
-        userGoogle.addEventListener('click', () => {
-            buttonGoogle()
-        })
-    */
 }

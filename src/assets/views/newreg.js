@@ -30,7 +30,7 @@ export const newRegt = () => {
                             <input id="password" type="password" placeholder="Ingresa una Contraseña"></br>
                             </div>
                             <div class="initnewP">
-                            <button id="enviar" class="btnSiginP">Enviar</button> 
+                            <button id="enviar2" class="btnSiginP">Enviar</button> 
                             </div>`
 
     //creamos container footer
@@ -40,13 +40,18 @@ export const newRegt = () => {
     contInit.appendChild(contFooter);
     contFooter.innerHTML += ` <h6>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h6>`
 
-    const btnEnviar = document.getElementById("enviar")
-    btnEnviar.addEventListener("click", () => {
+    const login = () => {
         const name = document.getElementById("name")
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         createUser(email, password, name);
 
+    }
+    
+    const crearCuenta=document.getElementById("enviar2");
+    crearCuenta.addEventListener("click",()=>{
+      
+        login();
     })
 
 
