@@ -29,7 +29,11 @@ export const newRegt = () => {
                             <label>Email:</label><br><input id="email" type="correo"></br>
                             <label>Ingresa una Contraseña:</label><br><input id="password" type="pasword"></br>
                             </div>
-                            <button id="enviar2" class="btnSigin">Enviar</button> `
+
+                            <div class="initnewP">
+                            <button id="enviar2" class="btnSiginP">Enviar</button> 
+                            </div>`
+
 
     //creamos container footer
     const contFooter = document.createElement("div");
@@ -38,7 +42,6 @@ export const newRegt = () => {
     contInit.appendChild(contFooter);
     contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
 
-
     const login = () => {
         const name = document.getElementById("name")
         const email = document.getElementById("email").value;
@@ -46,6 +49,7 @@ export const newRegt = () => {
         createUser(email, password, name);
 
     }
+
     const crearCuenta=document.getElementById("enviar2");
     crearCuenta.addEventListener("click",()=>{
       
