@@ -1,3 +1,5 @@
+import { crearPost } from '/assets/js/post.js';
+
 export const wall = () => {
     //creamos vista o pagina principal
     const contPrincipal = document.getElementById("root");
@@ -42,4 +44,5 @@ export const wall = () => {
         const text = document.getElementById("post").value;
         crearPost();
     })
+
 }
