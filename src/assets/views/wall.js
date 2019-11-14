@@ -1,10 +1,7 @@
-
-import { crearPost } from '/assets/js/post.js';
-
 export const wall = () => {
     //creamos vista o pagina principal
     const contPrincipal = document.getElementById("root");
-    
+
     //creamos container principal
     const contInit = document.createElement("div");
     contInit.className = "contInit";
@@ -39,10 +36,10 @@ export const wall = () => {
     contInit.appendChild(contFooter);
     contFooter.innerHTML += ` <h3>Creado por Geraldine, Marielys y Natalia, Laboratoria 2019</h3>`
 
-    
-  const btnenviar=document.getElementById("postear");
-    btnenviar.addEventListener('click',()=>{
-    const text = document.getElementById("post").value;
-    crearPost();
-  })
 
+    const btnenviar = document.getElementById("postear");
+    btnenviar.addEventListener('click', () => {
+        const text = document.getElementById("post").value;
+        crearPost();
+    })
+}
