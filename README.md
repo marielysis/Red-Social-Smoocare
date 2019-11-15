@@ -26,3 +26,8 @@ Hemos escogido estos colores por que queremos  proyectar confianza, salud, posit
 
 
 ## Historias de Usuarios
+
+
+## Figma
+
+[Trello](https://www.figma.com/file/OPNTCMBPnW6rwDzHmABeBJ/SmooCare?node-id=0%3A1)
